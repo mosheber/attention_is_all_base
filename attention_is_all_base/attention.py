@@ -86,7 +86,7 @@ def label_smoothing(inputs, epsilon=0.1):
 class Attention:
     def __init__(self, size_layer, embedded_size, learning_rate, size, output_size,
                  num_blocks = 2,
-                 num_heads = 8, activation=tf.nn.relu,dense_layer_depth = 32,dense_layer_divide=2,class_weights=[0.5, 1.5],sequence_length=slices):
+                 num_heads = 8, activation=tf.nn.relu,dense_layer_depth = 32,dense_layer_divide=2,class_weights=[0.5, 1.5],sequence_length=3):
         self.X = tf.placeholder(tf.float32, (None, sequence_length, size))
         self.Y = tf.placeholder(tf.float32, (None, output_size))
         self.activation = activation

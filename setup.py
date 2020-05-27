@@ -1,7 +1,7 @@
 from setuptools import setup,find_packages
 
 setup(name='attention_is_all_base',
-      version='0.1',
+      version='0.2',
       description='attention_is_all_base',
       author='huseinzol05',
       author_email='huseinzol05',
